@@ -1,4 +1,6 @@
 import MyComponent from './components/myComponent.class.js'
+import * as TOOLS from './components/tools.class.js'
+
 import * as THREE from 'three'
 
 var test = new MyComponent()

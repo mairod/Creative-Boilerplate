@@ -3,4 +3,4 @@ src/.sass-cache
 npm-debug.log
 build/javascript/*
 build/stylesheets/*
-.DS_Store?
+.DS_Store

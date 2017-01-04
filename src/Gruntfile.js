@@ -35,13 +35,13 @@ module.exports = function(grunt) {
         notify: {
             watch: {
                 options: {
-                    title: 'Ninna Ricci | Super iFrame',
+                    title: 'Creative Project',
                     message: 'SASS and Browserfiy finished running'
                 }
             },
             build: {
                 options: {
-                    title: 'Ninna Ricci | Super iFrame',
+                    title: 'Creative Project',
                     message: 'Build Successful !'
                 }
             }

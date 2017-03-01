@@ -16,6 +16,12 @@ npm
 Webpack 2
 ```
 
+Node version recommended :
+
+```
+Node : v7.4.0
+npm : 4.0.5
+```
 ## Running Dev Environement
 
 Dev are in the ```src``` repository

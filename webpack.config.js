@@ -27,10 +27,14 @@ module.exports = {
           },
           {
               test: /\.scss$/,
-              loader: [ExtractTextPlugin.extract({ fallbackLoader: 'style-loader', loader: ['css-loader'] }),
-                  'css-loader',
-                  'sass-loader'
-              ],
+              use: ExtractTextPlugin
+                .extract({
+                    fallbackLoader: 'style-loader',
+                    loader: [
+                        { loader: 'css-loader', query: { modules: false, sourceMaps: true } },
+                        { loader: 'sass-loader'},
+                    ]
+                })
           },
           // Loaders for other file types can go here
         ],

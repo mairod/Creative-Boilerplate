@@ -11,7 +11,7 @@ export class FrameRateUI {
         this.context = this.canvas.getContext("2d")
         this.rawFps = 0
         this.displayedFps = 60
-        this.lastLoop = new Date;
+        this.lastLoop = new Date
         this.flag = {
             frameRate: [],
             graph: []
@@ -127,8 +127,9 @@ export class FrameRateUI {
 // Spectrum debug and analysis
 export class AudioAnalyzer {
     constructor(options) {
-        this.options = options || new Object
-        this.debug = this.options.debug || false
+        this.options            = options || new Object
+        this.debug              = this.options.debug || true
+        this.audioElement       = this.options.audioElement || undefined
         this.url = this.options.url
         this.samplingFrequency = this.options.samplingFrequency
         this.mainContainer = document.querySelector('body')
@@ -158,11 +159,15 @@ export class AudioAnalyzer {
         this.container.appendChild(this.canvas)
         this.container.classList.add('spectrum')
         this.mainContainer.appendChild(this.container)
-        this.audio = new Audio()
-        this.audio.src = this.url
-        this.audio.controls = this.options.playerUI
-        this.audio.autoplay = this.options.autoplay
-        this.audio.crossOrigin = "anonymous"
+        if (this.audioElement != undefined) {
+            this.audio = this.audioElement
+        } else {
+            this.audio = new Audio()
+            this.audio.src = this.url
+            this.audio.controls = this.options.playerUI
+            this.audio.autoplay = this.options.autoplay
+            this.audio.crossOrigin = "anonymous"
+        }
         if (this.audio.controls) {
             this.canvas.style.paddingBottom = '28px'
             this.audio.style.position = 'absolute'

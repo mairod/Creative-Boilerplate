@@ -9,29 +9,39 @@
 
 
 ```
+# Requirement :
+
+```
+npm
+Webpack 2
+```
 
 ## Running Dev Environement
 
 Dev are in the ```src``` repository
+The ```/build foler``` can be entirely rebuild from the src folder, so DO NOT place any needed assets in the build foler ! ONLY in the ```/src``` they will be copied in the build during the export.
 
-# Requirement :
-
-```
-  Grunt
-  Compass
-  Npm
-```
+Installation of Webpack : ```npm i -g webpack webpack-dev-server@2```
 
 ##To start :
 
-1. Clone the project
+1. Clone the project & ```cd path/to/the/clonned/repository```
 2. Run ```npm install```
 3. Run ```npm start```
 4. Go to ```localhost:3000``` on your browser.
 
+NOTE : The dev port is configurable in the ```package.json```
+
+##Need HTTPS ?
+
+Simply run ```npm run https```
+
 ##To build :
 
 Run ```npm run build```
+
+
+
 
 #Tools :
 
@@ -149,14 +159,16 @@ Math.easeInOutQuint = function (t) { return t<.5 ? 8*t*t*t*t : 1-8*(--t)*t*t*t }
 
 ## Storage
 
-There is a singleton for storing data and recovering it anywhere.
+There is a global object for storing data and recovering it anywhere.
 
 Simply use :
 
 ```
-import * as tools from './lib/tools.class.js'
+STORAGE.my_var = "foo";
 
-var storage = new tools.Storage
+and after :
+
+let my_var = STORAGE.my_var;
 ```
 
 ## Framerate Visualizer

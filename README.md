@@ -24,8 +24,8 @@ npm : 4.0.5
 ```
 ## Running Dev Environement
 
-Dev are in the ```src``` repository
-The ```/build foler``` can be entirely rebuild from the src folder, so DO NOT place any needed assets in the build foler ! ONLY in the ```/src``` they will be copied in the build during the export.
+Dev are in the ```/src``` repository
+The ```/build``` folder can be entirely rebuild from the src folder, so DO NOT place any needed assets in the build folder ! ONLY in the ```/src``` directory, they will be copied in the build during export.
 
 Installation of Webpack : ```npm i -g webpack webpack-dev-server@2```
 

@@ -1,1 +1,20 @@
-body{background-color:#eaeaea;display:-webkit-box;display:-ms-flexbox;display:flex}h1{font-family:sans-serif;color:#262626;font-size:4em;margin:150px 0 0 150px}.fps{top:0;left:0;-webkit-transform-origin:top left;transform-origin:top left;-webkit-transform:scale(.7);transform:scale(.7)}
+body {
+  background-color: #eaeaea;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+h1 {
+  font-family: sans-serif;
+  color: #262626;
+  font-size: 4em;
+  margin: 150px 0 0 150px;
+}
+.fps {
+  top: 0;
+  left: 0;
+  -webkit-transform-origin: top left;
+          transform-origin: top left;
+  -webkit-transform: scale(0.7);
+          transform: scale(0.7);
+}

@@ -46,7 +46,7 @@ module.exports = {
                 .extract({
                     fallbackLoader: 'style-loader',
                     loader: [
-                        { loader: 'css-loader', query: { modules: false, sourceMaps: true } },
+                        { loader: 'css-loader', query: { modules: false, sourceMaps: Config.sourceMap } },
                         { loader: 'postcss-loader'},
                         { loader: 'stylus-loader'},
                     ]

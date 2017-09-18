@@ -3,7 +3,6 @@ module.exports = {
     port: 3000,
     https: false,
     sourceMap: true,
-    ES6: true,
     shared: true,
     inline: true,
     proxy: {

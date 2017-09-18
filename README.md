@@ -14,7 +14,7 @@
 
 * Webpack 3
 * Babel 
-* Full ES6 ready
+* ES6 ready
 * Autoprefixer
 * Stylus
 * Targetable browser
@@ -22,7 +22,6 @@
 * Network sharing
 * Hot reload
 * WebGL shaders import
-* Isolated build
 
 
 # Requirement :

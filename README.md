@@ -74,6 +74,11 @@ proxy: {                                    // setup proxy paths
 }
 ```
 
+## Stylus import 
+
+Stylus will find automaticly all your ```.styl``` files, just re-run the server !
+( all files starting with ``` _yourFile.styl ``` will be ignored )
+
 ## To build :
 
 Run ```npm run build```

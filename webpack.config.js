@@ -2,10 +2,12 @@ const path = require('path')
 const webpack = require('webpack')
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
 
+const Config = require('./settings.config')
+
 module.exports = {
     context: path.resolve(__dirname, './src'),
         entry: {
-          app: ['./stylesheet/styles.js', './javascript/index.js'],
+          app: ['./config/styles.js', './javascript/index.js'],
         },
     output: {
         path: path.resolve(__dirname, './build'),
@@ -14,6 +16,10 @@ module.exports = {
     },
     devServer: {
         contentBase: path.resolve(__dirname, './src'),
+        host: Config.shared ? "0.0.0.0" : null,
+        port: Config.port,
+        inline: Config.inline,
+        proxy: Config.proxy,
     },
     module: {
         rules: [
@@ -22,20 +28,34 @@ module.exports = {
               exclude: [/node_modules/],
               use: [{
                   loader: 'babel-loader',
-                  options: { presets: ['es2015'] }
+                  options: 
+                  {
+                      "presets": [
+                          ["env", {
+                              "targets": {
+                                  "browsers": Config.browsersTarget
+                              }
+                          }]
+                      ]
+                  }
               }],
           },
           {
-              test: /\.scss$/,
+              test: /\.styl$/,
               use: ExtractTextPlugin
                 .extract({
                     fallbackLoader: 'style-loader',
                     loader: [
                         { loader: 'css-loader', query: { modules: false, sourceMaps: true } },
-                        { loader: 'sass-loader'},
+                        { loader: 'postcss-loader'},
+                        { loader: 'stylus-loader'},
                     ]
                 })
           },
+          {
+              test: /\.(txt|frag|vert|glsl|svg)$/,
+              use: 'raw-loader'
+          }
           // Loaders for other file types can go here
         ],
     },

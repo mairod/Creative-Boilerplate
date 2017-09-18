@@ -60,7 +60,7 @@ All the avaliable options are stored in the ```settings.config.js``` in the root
 
 ### You can play with those options : 
 
-````
+```
 browsersTarget: ["last 2 versions"], // Target browser for autocomplete and Babel config, full list here : https://github.com/ai/browserslist
 port: 3000, // the listening port of your devServer
 https: false, // Need https ?

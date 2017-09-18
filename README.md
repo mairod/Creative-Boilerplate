@@ -12,17 +12,17 @@
 
 ### Features
 
-Markup :    * Webpack 3
-            * Babel 
-            * Full ES6 ready
-            * Autoprefixer
-            * Stylus
-            * Targetable browser
-            * Easy configurable devServer
-            * Network sharing
-            * Hot reload
-            * WebGL shaders import
-            * Isolated build
+* Webpack 3
+* Babel 
+* Full ES6 ready
+* Autoprefixer
+* Stylus
+* Targetable browser
+* Easy configurable devServer
+* Network sharing
+* Hot reload
+* WebGL shaders import
+* Isolated build
 
 
 # Requirement :

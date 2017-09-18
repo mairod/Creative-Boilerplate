@@ -20,6 +20,7 @@ module.exports = {
         port: Config.port,
         inline: Config.inline,
         proxy: Config.proxy,
+        https: Config.https
     },
     module: {
         rules: [

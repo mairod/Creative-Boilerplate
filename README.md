@@ -10,7 +10,7 @@
 
 ```
 
-### Features
+# Features
 
 * Webpack 3
 * Babel 

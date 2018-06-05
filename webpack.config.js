@@ -1,6 +1,8 @@
 const path = require('path')
 const webpack = require('webpack')
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
+
 
 const Config = require('./settings.config')
 
@@ -61,6 +63,9 @@ module.exports = {
         ],
     },
     plugins: [
+        new HtmlWebpackPlugin({
+            template: './index.html'
+        }),
         new ExtractTextPlugin({
             filename: 'stylesheet/main.css',
             allChunks: true,

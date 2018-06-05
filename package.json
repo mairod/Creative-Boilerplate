@@ -5,24 +5,25 @@
     "start": "NODE_ENV=developement webpack-dev-server",
     "build": "cp ./src/*.html ./build/ & cp -R ./src/assets ./build/ & webpack -p"
   },
-  "dependencies": {
-  },
+  "dependencies": {},
   "paths": {},
   "devDependencies": {
+    "autoprefixer-stylus": "^0.14.0",
     "babel-core": "^6.23.1",
     "babel-loader": "^6.3.2",
+    "babel-preset-env": "^1.6.0",
     "css-loader": "^0.26.2",
     "extract-text-webpack-plugin": "^2.0.0-beta.5",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^3.2.0",
     "node-sass": "^4.5.0",
-    "sass-loader": "^6.0.2",
-    "style-loader": "^0.13.2",
-    "webpack-dev-server": "^2.4.1",
-    "autoprefixer-stylus": "^0.14.0",
-    "babel-preset-env": "^1.6.0",
     "postcss-loader": "^2.0.6",
     "raw-loader": "^0.5.1",
+    "sass-loader": "^6.0.2",
+    "style-loader": "^0.13.2",
     "stylus": "^0.54.5",
     "stylus-loader": "^3.0.1",
-    "webpack": "^3.0.0"
+    "webpack": "^3.0.0",
+    "webpack-dev-server": "^2.4.1"
   }
 }

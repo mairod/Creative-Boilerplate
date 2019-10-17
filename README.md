@@ -38,14 +38,14 @@ Node : v7.4.0
 npm : 4.0.5
 ```
 
-## Running Dev Environement
+## Running Dev Environment
 
 Dev are in the ```/src``` repository
 The ```/build``` folder can be entirely rebuild from the src folder, so DO NOT place any needed assets in the build folder ! ONLY in the ```/src``` directory, they will be copied in the build during export.
 
 Installation of Webpack : ```npm i -g webpack webpack-dev-server```
 
-##To start :
+## To start :
 
 1. Clone the project & ```cd path/to/the/clonned/repository```
 2. Run ```npm install```
@@ -55,7 +55,7 @@ Installation of Webpack : ```npm i -g webpack webpack-dev-server```
 
 ## Config as you wish
 
-All the avaliable options are stored in the ```settings.config.js``` in the root of your project
+All the available options are stored in the ```settings.config.js``` in the root of your project
 
 ### You can play with those options : 
 
@@ -234,7 +234,7 @@ frameRateUI.update()
 
 ## AudioAnalyzer
 
-The AudioAnalyzer is here to help you to build some cools animations from a sound. You will be able to create some controls points based on a frequecy for animated your elements
+The AudioAnalyzer is here to help you to build some cools animations from a sound. You will be able to create some controls points based on a frequency for animated your elements
 
 
 ![alt tag](http://zupimages.net/up/16/43/0zoj.png)
